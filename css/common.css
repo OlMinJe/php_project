@@ -1,0 +1,40 @@
+/* 마진 패딩 초기화 */
+* { padding: 0; margin: 0; }
+/* 페이지 기본 글꼴과 크기 설정 */
+body { font-family: "돋움";   font-size: 14px; }
+img { border: 0;}
+ul { list-style-type: none; }
+/* <a> 태그 기본 설정 */
+a { display: inline-block; text-decoration: none; }
+a:link { text-decoration:none; color: #222222; }
+a:hover { text-decoration:none; color: #222222; }
+a:visited { text-decoration:none; color: #222222; }
+a:active { text-decoration:none; color: #222222; }
+/* 상단 헤더 */
+#top { width: 1000px; height: 80px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+#top h3 { font-size: 20px; }
+#top #top_menu { /*float: right; margin: 30px 60px 0 0;*/ }
+#top #top_menu li { display: inline; margin-right: 10px; }
+#top #top_menu li:last-child { margin-right: 0; }
+#top #top_menu li a { position: relative; }
+#top #top_menu li a:after { position: absolute; content: ''; top: 2px; right: -8px; border-right: 1px solid #000; width: 1px; height: 11px; }
+#top #top_menu li:last-child a:after { border: none; }
+#menu_bar { padding: 20px; background-color: cornflowerblue; font-size: 16px; }
+#menu_bar ul { width: 1000px; margin: 0 auto; display: flex; justify-content: space-around; }
+#menu_bar li { display: inline; color: white; }
+/*#menu_bar a:link { color: white; font-weight: 600; }
+#menu_bar a:hover { color: black; }
+#menu_bar a:visited { color: white; }
+#menu_bar a:active { color: black; }*/
+#menu_bar a { color: white; font-weight: 600; }
+#menu_bar a:hover { color: black; font-weight: 600; }
+/* 메인 이미지 */
+#main_img_bar { height: 230px; background-color: aliceblue; position: relative;}
+#main_img_bar::before { content: ''; position: absolute; width: 43%; height: 100%; top: 0; left: 0; background-color: #2a2a2a; }
+#main_img_bar img { height: 100%; margin: 0 auto; display: block; position: relative; z-index: 10; }
+/* 하단 푸터 */
+footer { background-color: beige; }
+#footer_content { width: 1000px; margin: 0 auto; color: #212121; font-weight: bold; padding: 50px 0 100px; display: flex; flex-direction: row; justify-content: space-between;}
+#footer_logo { font-size: 16px; }
+#footer_logo span { color: brown; }
+#author { }
